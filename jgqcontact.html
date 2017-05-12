@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>New HTML5 page</title>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html.js"></script> <!--javascript workaround-->
+		<link rel="stylesheet" type="text/css" href="CSS/jgqcontact.css">
+	</head>
+
+	<body>
+		<header> <!--Creates header at the top of the page-->
+			<h1>Let's Travel the World!</h1>
+			<p class="header">Its the Journey AND the Destination</p>
+		</header>
+		
+		<nav> <!--creates the nav with the links on the left side of the pages-->
+			<ul>
+				<li>
+					<a href="jgqindex.html">Home</a>
+				</li>
+				<li>
+					<a href="jgqdestination.html">Destination</a>
+				</li>
+				<li>
+					<a href="jgqspecial.html">Special</a>
+				</li>
+				<li>
+					<a href="jgqblog.html">Travel Blog</a>
+				</li>
+				<li>
+					<a href="jgqcontact.html">Contact Us</a>
+				</li>
+			</ul>
+		</nav>
+
+		<section> <!--creates the section with the main body of text-->
+			<h2>Contact Us</h2>
+			<aside>
+				<p class="aside">Charity Fundraiser Status</p>
+				<progress value="73" max="100"></progress>
+				<p class="aside">$730 of $1000</p>
+			</aside>
+			<p class="par1"> Tell us about yourself and how we can help you (* = required field) :</p>
+			<form autocomplete="off"> <!--This section creates the form with various input fields-->
+				<div class="formleft">
+					Name* <br><input type="text" size="30" name="fullname" required placeholder="Jane Doe" autofocus><br><br>
+  					Email* <br><input type="email" size="30" name="email" required><br><br>
+  					Phone* <br><input type="tel" size="30" name="phone" required placeholder="(xxx) xxx-xxxx"><br><br>
+  					Personal Website <br><input type="url" size="30" name="personalwebsite"><br>
+				</div>
+				<div class="formright">
+					Next Destination <br><input type="text" size="30" name="nextdestination" list="destinations"><br><br>
+					<datalist id="destinations">
+						<option value="Beijing">Beijing</option>
+						<option value="Lisbon">Lisbon</option>
+						<option value="Paris">Paris</option>
+						<option value="Sydney">Sydney</option>
+						<option value="Tokyo">Tokyo</option>
+						<option value="Washington DC">Washington DC</option>
+					</datalist>
+					Expected Date of Departure <br><input type="date" size="30" name="expecteddateofdeparture" min="2017-02-26"><br><br>
+					Number of Nights on Trip <br><input type="number" size="15" name="nightsontrip" min="1" max="30" value="6" step="1"><br>
+				</div>
+				<input type="submit" name="submit" class="submit" value="Help Me Book My Trip!">
+			</form>
+		</section>
+
+		<footer> <!--creates the footer at the bottom of the page-->
+			&copy; Travel the World LLC <br> 123 Main Street <br> Somewhere, USA 99999
+		</footer>
+	</body>
+</html>

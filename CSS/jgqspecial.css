@@ -1,0 +1,115 @@
+article, aside, figcaption,figure, footer, header, nav, section { /*javascript workaround*/
+	display: block;
+}
+
+body { /*Sets width of the body and the font of all text within the body to verdana*/
+	font-family: Verdana;
+	width: 800px;
+}
+
+section { /*gives the section color and its height and*/
+	background-color: #006363;
+	margin: 0px;
+	height: 540px;
+}
+
+header { /*gives the header its color and height*/
+	height: 100px;
+	background-color: #009999;
+}
+
+h1 { /*sets color for header and places text in the top center of the header. gives the text the color white*/
+	font-size: 32px;
+	background-color: #009999;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	color: white;
+	margin: 0px;
+	text-align: center;
+}
+
+p.header { /*sets text to center and emboldens and increases the font size of the text*/
+	text-align: center;
+	font-size: 20px;
+	margin: 0px;
+	font-weight: bold;
+}
+
+nav { /*sets dimensions, color, border, margin and font of the nav bar. the margin on the nav bar makes the text to the right wrap around it.*/
+  width: 130px;
+  height: 260px;
+  float: left;
+  background-color: #FFD073;
+  border: 1px black solid;
+  clear: right;
+  font-weight: bold;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 5px;
+}
+
+ul { /* sets o padding on the left so the links in the nav bar can remain centered*/
+	padding-left: 0px;
+}
+
+li { /*removes the bullet points from the list in the nav and the margins create the spacing between the links*/
+	list-style-type: none;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+a { /*sets the color of the links in the nav bar*/
+	color: #A64B00;
+}
+
+h2 { /*sets the font size, font color, and spacing of the 'Main Page Content'*/
+	font-size: 20px;
+	color: #FFAA00;
+	margin: 0px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	padding-left: 150px;
+}
+
+p { /*sets the font size and font color for all p elements*/
+	font-size: 14px;
+	color: white;
+}
+
+p.par3 { /*creates space between text and the left side of the section*/
+	padding-left: 20px;
+}
+
+footer { /*sets the dimensions, color, font size, font color, and text to align in the center for the footer*/
+	width: 800px;
+	height: 50px;
+	background-color: #FFD073;
+	margin: 0px;
+	text-align: center;
+	font-size: 12px;
+	color: #A64B00;
+}
+
+figure.aside { /*sets the dimensions of the figure element so it can contain the img and then floats the figure to the right*/
+	width: 130px;
+	height: 250px;
+	float: right;
+}
+
+figcaption.imgtrio { /*sets the color and font size of the text; sets the width of the element and the padding*/
+	color: #FFAA00;
+	width: 745px;
+	padding-left: 95px;
+	font-size: 14px;
+}
+
+figcaption.monimg { /*sets the color of the text and centers the text*/
+	text-align: center;
+	color: #FFAA00;
+	padding-left: 25px;
+}
+
+figure.imgtrio { /*aligns the images to the center*/
+	margin-left: 27px;
+	margin-right: 15px;
+}
